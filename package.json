@@ -1,6 +1,6 @@
 {
     "name": "PortableCGL",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Portable Coding Guidelines",
     "main": "Gruntfile.js",
     "repository": {
