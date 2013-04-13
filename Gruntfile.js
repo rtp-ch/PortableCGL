@@ -16,7 +16,7 @@ module.exports = function (grunt) {
         },
         exec: {
             exportToJSON: {
-                command: 'node jshint/jshintrc.js >> jshint/.jshintrc',
+                command: 'node jshint/jshintrc.js > jshint/.jshintrc',
                 stdout: false,
                 stderr: false
             },
