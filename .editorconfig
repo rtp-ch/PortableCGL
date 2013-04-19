@@ -1,0 +1,21 @@
+# EditorConfig Properties
+# [EditorConfig](http://EditorConfig.org)
+
+# top-most EditorConfig file
+
+root = true
+
+# File Handling
+# Unix-style newlines with a newline ending every file
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+# Indentation
+# 4 spaces
+
+{[*.js],[*.php],[*.s?css],[*.html?],[*.less]}
+indent_style = space
+indent_size = 4
