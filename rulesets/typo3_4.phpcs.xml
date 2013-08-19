@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="pcsg-generated-ruleset">
-    <description>Created with the PHP Coding Standard Generator. http://edorian.github.com/php-coding-standard-generator/
-    </description>
+    <description>Modified PSR2 Standard to better comply with TYPO3 v4.x</description>
     <rule ref="PSR1">
         <exclude name="PSR1.Classes.ClassDeclaration" />
     </rule>
