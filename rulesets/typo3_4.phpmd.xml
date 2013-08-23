@@ -17,5 +17,14 @@
     <!-- Unused Code Rules -->
     <rule ref="rulesets/unusedcode.xml" />
     <!-- Naming Rules -->
-    <rule ref="rulesets/naming.xml" />
+    <rule ref="rulesets/naming.xml/ShortMethodName"/>
+    <rule ref="rulesets/naming.xml/ConstructorWithNameAsEnclosingClass"/>
+    <rule ref="rulesets/naming.xml/ConstantNamingConventions"/>
+    <rule ref="rulesets/naming.xml/BooleanGetMethodName"/>
+    <rule ref="rulesets/naming.xml/ShortVariable"/>
+    <rule ref="rulesets/naming.xml/LongVariable">
+        <properties>
+            <property name="maximum" value="30"/>
+        </properties>
+    </rule>    
 </ruleset>

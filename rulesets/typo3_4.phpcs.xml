@@ -2,9 +2,10 @@
 <ruleset name="pcsg-generated-ruleset">
     <description>Modified PSR2 Standard to better comply with TYPO3 v4.x</description>
     <rule ref="PSR1">
+    	<!-- Namespaces will become available in TYPO3 6.x -->
         <exclude name="PSR1.Classes.ClassDeclaration" />
+        <!-- Camel case class names Will become the norm in TYPO3 6.x -->
+        <exclude name="Squiz.Classes.ValidClassName" />
     </rule>
-    <rule ref="PSR2">
-        <exclude ref="PSR2.Files.EndFileNewline"/>
-    </rule>
+    <rule ref="PSR2" />
 </ruleset>
