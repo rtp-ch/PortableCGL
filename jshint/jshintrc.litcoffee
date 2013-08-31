@@ -269,7 +269,7 @@ Specify indentation.
 
 Sets the maximum recommended length of a line.
 
-        maxlen: 140
+        maxlen: 160
 
 This option enforces the consistency of quotation marks used throughout your code. `true` enforces consistency.
 
