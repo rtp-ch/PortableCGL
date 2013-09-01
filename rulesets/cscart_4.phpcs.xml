@@ -5,7 +5,7 @@
         <!-- Camel case function names are not enforced in addons -->
         <exclude name="Generic.NamingConventions.CamelCapsFunctionName" />
 		<!-- allow for "die('Access denied')" in addon files  -->        	
-        <exclude name="PSR1.Files.SideEffect" />
+        <exclude name="PSR1.Files.SideEffects" />
     </rule>
     <rule ref="PSR2" />
 </ruleset>
