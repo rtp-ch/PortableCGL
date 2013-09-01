@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="pcsg-generated-ruleset">
+    <description>Modified PSR2 Standard to better comply with CS-Cart v4.x</description>
+    <rule ref="PSR1">
+        <!-- Camel case function names are not enforced in addons -->
+        <exclude name="Generic.NamingConventions.CamelCapsFunctionName" />
+    </rule>
+    <rule ref="PSR2" />
+</ruleset>
