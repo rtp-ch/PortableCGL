@@ -3,7 +3,7 @@ echo -e "\033[31mSIZE:\033[39m" &&
 phploc --exclude vendor/*,contrib/* . | grep -o -E '^.*Lines of Code.*$' &&
 phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s{2}Classes\b.*$' &&
 phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s+Methods\s+\d+$' &&
-phploc --exclude vendor/*,contrib/* . | grep -o -E '^.*Public\s+\d+$' &&
+phploc --exclude vendor/*,contrib/* . | grep -o -E '^.*Public Methods?\s+\d+' &&
 phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s+Functions\s+\d+$' &&
 echo -e "\033[31mXCLASSES:\033[39m" && 
 [ -a ext_localconf.php ] && cat ext_localconf.php | grep -o -E "\['XCLASS'\]" | wc -l || echo "     0" &&
