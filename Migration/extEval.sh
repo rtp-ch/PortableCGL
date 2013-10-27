@@ -1,10 +1,10 @@
 echo  &&
 echo -e "\033[31mSIZE:\033[39m" && 
-phploc --exclude vendor/*,contrib/* . | grep -o -E '^.*Lines of Code.*$' &&
-phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s{2}Classes\b.*$' &&
-phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s+Methods\s+\d+$' &&
-phploc --exclude vendor/*,contrib/* . | grep -o -E '^.*Public Methods?\s+\d+' &&
-phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s+Functions\s+\d+$' &&
+phploc --exclude vendor --exclude contrib/* . | grep -o -E '^.*Lines of Code.*$' &&
+phploc --exclude vendor --exclude contrib . | grep -o -E '^\s{2}Classes\b.*$' &&
+phploc --exclude vendor --exclude contrib . | grep -o -E '^\s+Methods\s+\d+$' &&
+phploc --exclude vendor --exclude contrib . | grep -o -E '^.*Public Methods?\s+\d+' &&
+phploc --exclude vendor --exclude contrib . | grep -o -E '^\s+Functions\s+\d+$' &&
 echo -e "\033[31mTYPO3 API CALLS:\033[39m" && 
 find . ! -path './vendor/*' ! -path './contrib/*' ! -path './ext_*' -type f -name '*.php' | xargs cat | grep -c -E 't3lib_|TYPO3_DB|TSFE'
 echo -e "\033[31mXCLASSES:\033[39m" && 
@@ -16,5 +16,5 @@ curl -O -s https://raw.github.com/rtp-ch/PortableCGL/master/rulesets/typo3_4.php
 echo -e "\033[31mMESS ERRORS:\033[39m" && 
 curl -O -s https://raw.github.com/rtp-ch/PortableCGL/master/rulesets/typo3_4.phpmd.xml && phpmd . --exclude vendor/*,contrib/* --suffixes php text typo3_4.phpmd.xml | wc -l && rm typo3_4.phpmd.xml &&
 echo -e "\033[31mCOMPLEXITY:\033[39m" && 
-phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s+Cyclomatic Complexity.*$' &&
+phploc --exclude vendor --exclude contrib . | grep -o -E '^\s+Cyclomatic Complexity.*$' &&
 echo;
