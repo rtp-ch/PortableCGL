@@ -5,6 +5,8 @@ phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s{2}Classes\b.*$' &&
 phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s+Methods\s+\d+$' &&
 phploc --exclude vendor/*,contrib/* . | grep -o -E '^.*Public Methods?\s+\d+' &&
 phploc --exclude vendor/*,contrib/* . | grep -o -E '^\s+Functions\s+\d+$' &&
+echo -e "\033[31mTYPO3 API CALLS:\033[39m" && 
+find . ! -path './vendor/*' ! -path './contrib/*' ! -path './ext_*' -type f -name '*.php' | xargs cat | grep -c -E 't3lib_|TYPO3_DB|TSFE'
 echo -e "\033[31mXCLASSES:\033[39m" && 
 [ -a ext_localconf.php ] && cat ext_localconf.php | grep -o -E "\['XCLASS'\]" | wc -l || echo "     0" &&
 echo -e "\033[31mHOOKS:\033[39m" &&
