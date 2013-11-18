@@ -5,5 +5,9 @@
     <rule ref="PSR2" />
     <!-- Single quotes are preferred -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage" />
-	<rule ref="Generic.PHP.DeprecatedFunctions"/>    
+	<rule ref="Generic.PHP.DeprecatedFunctions"/>
+    <!-- Require comments -->
+    <rule ref="PEAR.Commenting.FunctionComment"/>
+    <!-- Prevent error silencing (@) -->
+    <rule ref="Generic.PHP.NoSilencedErrors"/>	 
 </ruleset>
