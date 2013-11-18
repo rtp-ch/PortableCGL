@@ -8,4 +8,7 @@
         <exclude name="Squiz.Classes.ValidClassName" />
     </rule>
     <rule ref="PSR2" />
+    <!-- Single quotes are preferred -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage" />
+	<rule ref="Generic.PHP.DeprecatedFunctions"/>
 </ruleset>

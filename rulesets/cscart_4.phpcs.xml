@@ -8,4 +8,7 @@
         <exclude name="PSR1.Files.SideEffects" />
     </rule>
     <rule ref="PSR2" />
+    <!-- Single quotes are preferred -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage" />
+	<rule ref="Generic.PHP.DeprecatedFunctions"/>    
 </ruleset>
