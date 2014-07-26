@@ -5,12 +5,12 @@
     <rule ref="PSR2" />
     <!-- Single quotes are preferred -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage" />
-    <rule ref="Squiz.Operators.ComparisonOperatorUsageSniff">
-        <severity>0</severity>
-    </rule>
+    <!-- Deprecated functions should not be used. -->
     <rule ref="Generic.PHP.DeprecatedFunctions"/>
     <!-- Require comments -->
-    <rule ref="PEAR.Commenting.FunctionComment"/>
+    <rule ref="PEAR.Commenting.FunctionComment" />
+    <!-- Prevents implicit comparisons (scrutinizer compliance) -->
+    <rule ref="Squiz.Operators.ComparisonOperatorUsage" />
     <!-- Prevent error silencing (@) -->
     <rule ref="Generic.PHP.NoSilencedErrors"/>	 
 </ruleset>
