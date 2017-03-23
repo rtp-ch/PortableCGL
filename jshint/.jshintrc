@@ -13,7 +13,7 @@
     "_": false
   },
   "debug": false,
-  "devel": false,
+  "devel": true,
   "maxparams": 6,
   "maxdepth": 6,
   "maxstatements": 25,
