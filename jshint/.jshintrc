@@ -9,6 +9,7 @@
   "phantom": true,
   "globals": {
     "RTP": true,
+    "$": true,
     "Backbone": false,
     "_": false
   },
